@@ -3,7 +3,7 @@ function setup() {
   canvas.center();
   video = createCapture(VIDEO);
   video.hide();
-  classifier = ml5.imageClassifier("Mobilenet", modelloaded);
+  classifier = ml5.imageClassifier("https://teachablemachine.withgoogle.com/models/R3rBWMPIl/model.json", modelloaded);
 }
 
 function modelloaded(){
